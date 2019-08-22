@@ -148,6 +148,7 @@ button:hover {
 p {
 	font-family: 'Roboto', sans-serif;
 }
+/* tablet view */
 @media(max-width: 875px) {
   .desktopOnly {
     display: none;
@@ -161,12 +162,36 @@ p {
   .logo {
     display: block;
     margin: 0 auto;
+    align-items: baseline;
   }
   .middle-img {
     max-width: 750px;
   }
-  nav .tabletOnly {
+  nav{
     display: flex;
     align-items: space-around;
+  }
+}
+/* phone view */
+@media(max-width: 525px) {
+  .articles {
+    flex-direction: column;
+  }
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  nav a {
+    font-size: 20px;
+    padding: 15px;
+  }
+  hr {
+    width: 525px;
+  }
+  .logo {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
